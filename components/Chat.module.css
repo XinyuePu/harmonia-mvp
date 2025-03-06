@@ -1,0 +1,115 @@
+/* 全局容器 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f8ea;
+}
+
+/* 欢迎词 */
+.welcomeContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ✅ 这里是唯一的改动，让欢迎词稍微大一点、柔和一点 */
+.welcomeContainer h1 {
+  font-size: 26px;  /* 适当增大字体 */
+  font-weight: bold;
+  color: #2d572c;  /* 柔和的绿色 */
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* 语言切换 */
+.languageSwitcher {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.languageSwitcher button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.languageSwitcher button:hover {
+  background-color: #45a049;
+}
+
+/* 聊天框 */
+.chatContainer {
+  width: 90%;
+  max-width: 600px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  overflow-y: auto;
+}
+
+/* 聊天消息 */
+.chatMessages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.userMessage, .botMessage {
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.userMessage {
+  background-color: #dfffd6;
+  align-self: flex-end;
+}
+
+.botMessage {
+  background-color: #4caf50;
+  color: white;
+  align-self: flex-start;
+}
+
+/* 输入框 */
+.inputContainer {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.inputContainer input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+}
+
+.inputContainer button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.inputContainer button:hover {
+  background-color: #45a049;
+}
