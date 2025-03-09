@@ -35,12 +35,12 @@ const Chat: React.FC = () => {
     setInput(""); // 清空输入框
 
     try {
-      const res = await fetch("/api/chat", {
+      const res = await fetch(`/api/chat`, {  // 直接用相对路径
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input }),
       });
-
+      
       const data = await res.json();
 
       if (res.ok) {
